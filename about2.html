@@ -3,34 +3,58 @@
 <html lang="ja">
 	<head>
 		<meta charset="utf-8" />
-		<title>about me</title>
 		<meta name="description" content="自己紹介ページを、勉強しながら作ってます">
-		<link rel="stylesheet" href="about.css" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- BootstrapのCSS読み込み -->
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<!-- jQuery読み込み -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<!-- BootstrapのJS読み込み -->
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>		
+		<link rel="stylesheet" href="about2.css" />
+		<title>about me</title>
+		<style>
+		.navbar {
+		border-radius: 0; 
+		}	
+		</style>
 	</head>
 	<body>
-		<div id="container">
-			<div id="header">
-				<header>
-					<nav>
-						<ul>
+		<header>
+			<div class="container">
+				<nav class="navbar navbar-default">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarMenu">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#">ホームページ</a>
+					</div>
+					<div class="collapse navbar-collapse" id="navbarMenu">
+						<ul class="nav navbar-nav navbar-right">
 							<li><a href="index.html">Home</a></li>
-							<li><a href="about.html" class="selected">About</a></li>
-							<li><a href="about2.html">About2(Bootstrap)</a></li>
+							<li><a href="about.html">About</a></li>
+							<li class="active"><a href="about2.html">About2</a></li>
 							<li><a href="contact.html">Contact</a></li>
 						</ul>
-					</nav>
-				</header>
+					</div>
+				</nav>
 			</div>
-			<div id="contents">
-				<div class="logo">
+		</header>
+		<div class="container">
+			<div class="row">
+				<div class="logo col-md-3">
 					<img src="tower.jpg" alt="mich5963 tower" />
 				</div>
-				<div class="profile">
+				<div class="profile col-md-9">
 					<section>
-						<h1>About me</h1>
-						<h3>mich5963</h3>
-
-						<h3>【経歴】</h3>
+						<h2>About me</h2>
+						<h4>mich5963</h4>
+						
+						<h4>【経歴】</h4>
 						<p>岐阜県の高校を卒業後、大学入学を機に上京。大学デビューは果たせず。<br>
 						卒業後、就職した会社でPOSシステムとか触ってた。<br>
 						当時はカード番号とか丸出しだったことが衝撃だったな・・・。</p>
@@ -45,20 +69,18 @@
 						<p>たぶん世間ではホワイトと言われる環境だろうけど、<br>
 						正直、もう少しガツガツした会社がいいな。</p>
 						
-						<h3>【勉強中】</h3>
+						<h4>【勉強中】</h4>
 						<p>DevOps関係　<span class="red">Ansible</span>とか、<span class="red">Serverspec</span>とか、<span class="red">Docker</span>とか使って自由に環境構築できるようにする。(妄想)</p>
 						<p>IoT関係　　BaaS連携おもしろそうだし。ラズパイだかArduinoだか、そのうちポチりそう。</p>
 						
-						<h3>【リンク】</h3>
+						<h4>【リンク】</h4>
 						<p><a href="https://mich5963.github.io/" target="_blank">GitHub Pages</a></p>
 					</section>
 				</div>
 			</div>
-			<div id=footer>
-				<footer>
-					<p>&copy; 2016 mich5963.</p>
-				</footer>
-			</div>
 		</div>
+		<footer>
+			<p>&copy; 2016 mich5963.</p>
+		</footer>
 	</body>
 </html>
